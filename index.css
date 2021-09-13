@@ -96,4 +96,7 @@ h2 {
 	font-size: 7px;
 }
 
-
+mark, mark > *, mark > * > * {
+	background-color: #ff0000;
+	padding: 0.2em 0em;
+}
