@@ -64,6 +64,21 @@ h2 {
 	background-color: #ffffff;
 }
 
+#navbar li {
+	list-style-type: none;
+	float: left;
+}
+
+#navbar ul{
+	display: flex;
+	justify-content: center;
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 #content {
     width: 60%;
     max-width: 700px;
