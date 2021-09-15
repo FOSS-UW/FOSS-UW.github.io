@@ -32,7 +32,7 @@ body {
 #welcome-panel {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    column-gap: 20px;
+    gap: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -62,6 +62,7 @@ body {
 	gap: 10px;
 	grid-auto-flow: dense;
 	align-items:center;
+	padding: 20px;
 }
 
 @media (min-width: 700px) {
