@@ -35,9 +35,10 @@ body {
     gap: 20px;
 }
 
-@media only screen and (max-width: 900px) {
+@media(max-width: 900px) {
     #welcome-panel {
-        display: inline-block;
+        grid-template-columns: none;
+		gap: 10px;
     }
 }
 
@@ -65,37 +66,65 @@ body {
 .project-card {
 	background-color: #ffffff;
 	border-radius: 14px;
-	width: 300px;
+	width: 320px;
 	height: 200px;
+	text-align: left;
+	position: relative;
 }
 
-@media(min-width: 800px) {
+.project-entry {
+	padding: 10px;
+	position: relative;
+}
+
+.project-link {
+	display: inline-block;     
+	position: relative;    
+	z-index: 1;     
+	padding: 1.1em;     
+	margin: -1.1em; 
+}
+
+.project-title-box {
+	display: inline-block;
+}
+
+.github-logo {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+}
+
+.project-title {
+	padding-top: 10px;
+}
+
+.project-desc {
+
+}
+
+.tag-wrapper {
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+}
+
+.project-tag {
+	padding: 3px;
+	border: lime solid 1px;
+	border-radius: 8px;
+}
+
+@media(min-width: 860px) {
 	#project-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1280px) {
 	#project-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
-}
-
-.project-title {
-	text-align: left;
-}
-
-.project-link {
-	text-decoration: none;
-	color: #000000;
-}
-
-.project-desc {
-	text-align: left;
-}
-
-.project-tag {
-	background-color: orange;
 }
 
 #news {
