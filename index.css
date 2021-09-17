@@ -35,7 +35,7 @@ body {
     gap: 20px;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1100px) {
     #welcome-panel {
         grid-template-columns: none;
 		gap: 10px;
@@ -51,8 +51,55 @@ body {
 	grid-template-rows: 1fr 1fr;
 }
 
-#join-links-box {
+#join-box {
+	display: grid;
 	background-color: red;
+	justify-content:left;
+}
+
+#join-grid {
+	display: grid;
+	gap: 15px;
+	padding: 10px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.join-entry {
+	width: 150px;
+	height: 70px;
+	background-color: #ffffff;
+	height: 50px;
+}
+
+.join-link {
+	display: block;
+}
+
+.join-content-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 4px;
+}
+
+.join-logo-container {
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+}
+
+.join-logo {
+	width: 100%;
+	height: 100%;
+}
+
+.join-title-container {
+
+}
+
+.join-title {
+
 }
 
 #newsletter-box {
