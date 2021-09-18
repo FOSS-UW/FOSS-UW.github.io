@@ -192,12 +192,54 @@ body {
 #news {
     background-color: green;
 	text-align: center;
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+	
 }
 
-#news-entry {
+.news-entry {
+	background-color: #ffffff;
+	text-align: left;
+	max-width: 700px;
+	margin: 14px;
+}
 
+.news-link {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.post-date {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+
+	font-weight: 300;
+}
+
+.post-title {
+	margin-top: 0px;
+	padding-top: 7px;
+}
+
+.post-blurb {
+
+}
+
+.read-more-container {
+	position: relative;
+	padding-bottom: 30px;
+	display: block;
+}
+
+.read-more-link {
+	display: block;
+	position: absolute;
+	right: 10px;
 }
 
 #footer {
     background-color: purple;
+	padding: 50px;
 }
