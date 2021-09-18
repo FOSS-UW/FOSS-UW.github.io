@@ -54,7 +54,7 @@ body {
 #join-box {
 	display: grid;
 	background-color: red;
-	justify-content:left;
+	justify-content: left;
 }
 
 #join-grid {
@@ -64,6 +64,17 @@ body {
 	padding-top: 0px;
 	padding-bottom: 40px;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width: 434px) {
+	#join-box {
+		justify-content: center;
+		text-align: center;
+	}
+	
+	#join-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 .join-entry {
