@@ -55,7 +55,7 @@ body {
 #welcome-panel {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 20px;
+    gap: 40px;
 }
 
 @media(max-width: 1100px) {
@@ -63,13 +63,19 @@ body {
         grid-template-columns: none;
 		gap: 10px;
     }
+	
+	#active-projects {
+		padding-top: 0px;
+	}
 }
 
 #club-intro {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 #intro-header {
+	margin-top: 0px;
+	padding-top: 0px;
 	font-size: 37px;
 	font-style: italic;
 	font-weight: 900;
@@ -83,19 +89,33 @@ body {
 
 #join-portal {
     display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 130px 90px;
+	margin-bottom: 110px;
+	border: blueviolet solid 4px;
+	border-radius: 10px;
+	padding: 20px;
 }
 
 #join-box {
 	display: grid;
-	background-color: red;
+	/*background-color: red;*/
 	justify-content: left;
+}
+
+.join-header {
+	margin-top: 0px;
+	padding-top: 10px;
+	font-weight: 300;
+	font-size: 22px;
+
+	color: blueviolet;
+	border-bottom: blueviolet solid 7px;
 }
 
 #join-grid {
 	display: grid;
-	gap: 15px;
-	padding: 10px;
+	gap: 29px;
+	padding: 20px;
 	padding-top: 0px;
 	padding-bottom: 40px;
 	grid-template-columns: repeat(2, 1fr);
@@ -115,24 +135,27 @@ body {
 .join-entry {
 	width: 150px;
 	height: 70px;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 	height: 50px;
 }
 
 .join-link {
 	display: block;
+	text-decoration: none;
 }
 
 .join-content-container {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	gap: 4px;
+	gap: 5px;
+	/*background-color: blueviolet;*/
+	height: 50px;
 }
 
 .join-logo-container {
-	width: 50px;
-	height: 50px;
-	background-color: yellow;
+	width: 40px;
+	height: 40px;
+	/*background-color: yellow;*/
 }
 
 .join-logo {
@@ -140,34 +163,63 @@ body {
 	height: 100%;
 }
 
-.join-title-container {
+.push {
+	padding-top: 2px;
+	padding-right: 2px;
+	width: 45px;
+	height: 45px;
+}
 
+.join-title-container {
+	
 }
 
 .join-title {
-
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 30px;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 10px;
+	font-weight: 900;
 }
 
 #newsletter-box {
-	background-color: tomato;
+	/*background-color: tomato;*/
+}
+
+#newsletter-form {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+#newsletter-subscribe-button {
+	background-color: blueviolet;
+	color: #ffffff;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 #active-projects {
-    background-color: yellow;
+    /*background-color: yellow;*/
 	display: grid;
 	justify-content: center;
 	text-align: center;
-	padding: 30px;
+	padding-top: 50px;
 }
 
 .section-header {
+	margin-top: 0px;
+	padding-top: 0px;
 	font-weight: 900;
-	font-size: 34px;
+	font-size: 25px;
 }
 
 #project-grid {
 	display: grid;
 	gap: 20px;
+	padding: 20px;
 }
 
 .project-card {
@@ -248,12 +300,12 @@ body {
 }
 
 #news {
-    background-color: green;
+    /*background-color: green;*/
 	text-align: center;
 	padding: 10px;
 	display: grid;
 	justify-content: center;
-	
+	padding-top: 50px;
 }
 
 .news-entry {
