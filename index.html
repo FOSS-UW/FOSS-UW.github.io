@@ -12,6 +12,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('#newsletter-subscribe-button').click(function(e) {
+              var inputvalue = $("#newsletter-input").val();
+              window.open("https://docs.google.com/forms/d/e/1FAIpQLSeFh7PAlIDSJMg5G61YnEl9f8QBzJx6SY6MypENTUEVADGUdg/viewform?usp=pp_url&entry.188720896="+inputvalue);
+          });
+      });
+    </script>
   </head>
   <body>
     <div id="banner">
@@ -80,8 +89,14 @@
               <h3 class="join-header">Subscribe to our newsletter</h3>
             </div>
             <form id="newsletter-form">
-              <input type="text" placeholder="Email Address">
-              <input id="newsletter-subscribe-button" type="submit" value="Subscribe">
+              <input id="newsletter-input" type="text" placeholder="Email Address">
+              <a
+                id="newsletter-subscribe-button"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeFh7PAlIDSJMg5G61YnEl9f8QBzJx6SY6MypENTUEVADGUdg/viewform?usp=pp_url&entry.188720896=myemail"
+                target="_blank"
+                class="s-NMyTiX1zi6rz"
+              >Subscribe
+            </a>
             </form>
           </div>
         </div>
