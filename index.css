@@ -345,10 +345,12 @@ body {
 	#newsletter-form {
 		grid-template-columns: none;
 		display: flex;
+		-webkit-appearance: none;
 	}
 
 	#newsletter-input {
 		width: 100%;
+		-webkit-appearance: none;
 	}
 
 	#newsletter-subscribe-button {
