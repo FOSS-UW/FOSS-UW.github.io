@@ -312,6 +312,8 @@ body {
 
 	#newsletter-form {
 		min-width: 40px;
+		gap: 0px;
+		width: 100%;
 	}
 }
 
