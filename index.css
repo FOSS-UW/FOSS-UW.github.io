@@ -99,9 +99,9 @@ body {
 
 #join-portal {
     display: grid;
-	grid-template-rows: 130px 90px;
+	grid-template-rows: 120px 90px;
 	border: #c2b1ec solid 4px;
-	border-top: #c2b1ec solid 7px;
+	border-top: #c2b1ec solid 24px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	padding: 20px;
@@ -122,16 +122,18 @@ body {
 	font-size: 22px;
 
 	color: #c2b1ec;
-	border-bottom: #c2b1ec solid 7px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 #join-grid {
 	display: grid;
 	gap: 29px;
 	padding: 20px;
-	padding-top: 0px;
+	padding-top: 15px;
 	padding-bottom: 40px;
 	grid-template-columns: repeat(2, 1fr);
+	border-top: #c2b1ec solid 5px;
 }
 
 @media(max-width: 434px) {
@@ -225,6 +227,8 @@ body {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	font-family: 'Montserrat', sans-serif;
+	border-top: #c2b1ec solid 5px;
+	padding-top: 15px;
 }
 
 #newsletter-input {
@@ -259,10 +263,19 @@ body {
 @media(max-width: 536px) {
 	#join-portal {
 		min-width: 100px;
+		grid-template-rows: 100px 80px;
+		border: #c2b1ec 2px solid;
+		border-top: #c2b1ec 17px solid;
+	}
+
+	#join-box {
+		height: min-content;
 	}
 
 	.join-header {
 		font-size: 16px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
 	}
 
 	.join-title {
@@ -272,6 +285,7 @@ body {
 	#join-grid {
 		padding: 4px;
 		gap: 10px;
+		padding-top: 10px;
 	}
 
 	#newsletter-box {
@@ -292,13 +306,21 @@ body {
 	#join-portal {
 		justify-content: center;
 		border: #c2b1ec 2px solid;
-		border-top: #c2b1ec 5px solid;
+		border-top: #c2b1ec 17px solid;
 		min-width: 100px;
+		gap: 0px;
+		grid-template-rows: 80px 80px;
+	}
+
+	.join {
+		padding: 0px;
+		margin: 0px;
 	}
 
 	#join-box {
 		padding: 0px;
 		gap: 0px;
+		height: min-content;
 	}
 
 	#newsletter-box {
@@ -306,13 +328,16 @@ body {
 	}
 
 	.join-header {
-		font-size: 14px;
+		font-size: 16px;
+		padding-bottom: 0px;
 	}
 
 	#join-grid {
 		gap: 14px;
 		padding-bottom: 0px;
 		padding: 0px;
+		padding-top: 10px;
+		margin-top: 0px;
 	}
 
 	.join-entry {
@@ -450,18 +475,24 @@ body {
 	}
 }
 
-@media(max-width: 420px) {
+@media(max-width: 450px) {
 	.project-card {
-		width: 260px;
-		height: 200px;
+		width: 250px;
+		height: 175px;
 	}
 
 	.project-title {
-		font-size: 24px;
+		font-size: 21px;
 	}
 
 	.project-desc {
-		font-size: 15px;
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 450px) {
+	.section-header {
+		font-size: 20px;
 	}
 }
 
