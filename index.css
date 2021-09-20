@@ -353,6 +353,7 @@ body {
 
 	#newsletter-subscribe-button {
 		font-size: 12px;
+		-webkit-appearance: none;
 	}
 }
 
