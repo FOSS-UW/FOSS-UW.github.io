@@ -58,11 +58,27 @@ body {
     gap: 40px;
 }
 
-@media(max-width: 1100px) {
+@media(max-width: 1200px) {
     #welcome-panel {
         grid-template-columns: none;
 		gap: 10px;
+		margin-bottom: 30px;
     }
+
+	#club-intro {
+		margin-bottom: 30px;
+	}
+
+	#join-portal {
+		width: 70vw;
+		max-width: 600px;
+		min-width: 400px;
+		margin: 0 auto;
+	}
+
+	#join-box {
+		justify-content: center;
+	}
 	
 	#active-projects {
 		padding-top: 0px;
@@ -90,10 +106,10 @@ body {
 #join-portal {
     display: grid;
 	grid-template-rows: 130px 90px;
-	margin-bottom: 110px;
-	border: blueviolet solid 4px;
+	border: #c2b1ec solid 4px;
 	border-radius: 10px;
 	padding: 20px;
+	height: min-content;
 }
 
 #join-box {
@@ -108,8 +124,8 @@ body {
 	font-weight: 300;
 	font-size: 22px;
 
-	color: blueviolet;
-	border-bottom: blueviolet solid 7px;
+	color: #c2b1ec;
+	border-bottom: #c2b1ec solid 7px;
 }
 
 #join-grid {
@@ -142,6 +158,10 @@ body {
 .join-link {
 	display: block;
 	text-decoration: none;
+}
+
+.join-link:hover .join-title {
+	color: #c2b1ec;
 }
 
 .join-content-container {
@@ -194,7 +214,7 @@ body {
 }
 
 #newsletter-subscribe-button {
-	background-color: blueviolet;
+	background-color: #c2b1ec;
 	color: #ffffff;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
