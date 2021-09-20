@@ -27,7 +27,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: #ffffff;
 	font-weight: 300;
-	padding: 5px;
+	padding: 10px;
 }
 
 #content {
@@ -44,12 +44,6 @@ body {
 	padding-bottom: 45px;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
-}
-
-@media(max-width: 420px) {
-	#content {
-		width: 95%;
-	}
 }
 
 #welcome-panel {
@@ -71,7 +65,7 @@ body {
 
 	#join-portal {
 		width: 70vw;
-		max-width: 600px;
+		max-width: 550px;
 		min-width: 400px;
 		margin: 0 auto;
 	}
@@ -107,9 +101,12 @@ body {
     display: grid;
 	grid-template-rows: 130px 90px;
 	border: #c2b1ec solid 4px;
-	border-radius: 10px;
+	border-top: #c2b1ec solid 7px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	padding: 20px;
 	height: min-content;
+	min-width: 380px;
 }
 
 #join-box {
@@ -138,13 +135,28 @@ body {
 }
 
 @media(max-width: 434px) {
+	#content {
+		width: 80%;
+	}
+
+	#pages-tab {
+		display: none;
+	}
+
+	#intro-header {
+		font-size: 28px;
+	}
+
+	#intro-content {
+		font-size: 15px;
+	}
+
 	#join-box {
-		justify-content: center;
-		text-align: center;
+
 	}
 	
 	#join-grid {
-		grid-template-columns: repeat(1, 1fr);
+		/*grid-template-columns: repeat(1, 1fr);*/
 	}
 }
 
@@ -211,6 +223,19 @@ body {
 #newsletter-form {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#newsletter-input {
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	padding-left: 7px;
+}
+
+#newsletter-input:focus {
+	outline: none;
 }
 
 #newsletter-subscribe-button {
@@ -221,6 +246,63 @@ body {
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 13px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	padding: 5px;
+}
+
+#newsletter-subscribe-button:hover {
+	cursor: pointer;
+}
+
+@media(max-width: 536px) {
+	#join-portal {
+		min-width: 100px;
+	}
+
+	.join-header {
+		font-size: 16px;
+	}
+
+	.join-title {
+		font-size: 24px;
+	}
+
+	#join-grid {
+		padding: 4px;
+		gap: 10px;
+	}
+
+	#newsletter-box {
+
+	}
+
+	#newsletter-form {
+		min-width: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	#join-portal {
+		justify-content: center;
+	}
+
+	#join-box {
+		justify-content: center;
+	}
+
+	#newsletter-box {
+		justify-content: center;
+	}
+
+	.join-header {
+		font-size: 17px;
+	}
+
+	#join-grid {
+		padding: 4px;
+		gap: 10px;
+	}
 }
 
 #active-projects {
@@ -316,8 +398,16 @@ body {
 
 @media(max-width: 420px) {
 	.project-card {
-		width: 300px;
+		width: 260px;
 		height: 200px;
+	}
+
+	.project-title {
+		font-size: 24px;
+	}
+
+	.project-desc {
+		font-size: 15px;
 	}
 }
 
