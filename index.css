@@ -144,11 +144,12 @@ body {
 	}
 
 	#intro-header {
-		font-size: 28px;
+		font-size: 22px;
 	}
 
 	#intro-content {
-		font-size: 15px;
+		font-size: 13px;
+		line-height: 1.8em;
 	}
 
 	#join-box {
@@ -278,17 +279,26 @@ body {
 	}
 
 	#newsletter-form {
-		min-width: 30px;
+		min-width: 40px;
 	}
 }
 
 @media(max-width: 450px) {
+	#banner-logo {
+		width: 120px;
+		height: 80px;
+	}
+
 	#join-portal {
 		justify-content: center;
+		border: #c2b1ec 2px solid;
+		border-top: #c2b1ec 5px solid;
+		min-width: 100px;
 	}
 
 	#join-box {
-		justify-content: center;
+		padding: 0px;
+		gap: 0px;
 	}
 
 	#newsletter-box {
@@ -296,12 +306,53 @@ body {
 	}
 
 	.join-header {
-		font-size: 17px;
+		font-size: 14px;
 	}
 
 	#join-grid {
-		padding: 4px;
-		gap: 10px;
+		gap: 14px;
+		padding-bottom: 0px;
+		padding: 0px;
+	}
+
+	.join-entry {
+		width: min-content;
+	}
+
+	.join-content-container {
+		gap: 3px;
+		padding: 0px;
+		margin: 0px;
+		grid-template-columns: none;
+		display: flex;
+	}
+
+	.join-logo-container {
+		width: 30px;
+		height: 30px;
+	}
+
+	.push {
+		width: 35px;
+		height: 35px;
+		padding-top: 1px;
+	}
+
+	.join-title {
+		font-size: 20px;
+	}
+
+	#newsletter-form {
+		grid-template-columns: none;
+		display: flex;
+	}
+
+	#newsletter-input {
+		width: 100%;
+	}
+
+	#newsletter-subscribe-button {
+		font-size: 12px;
 	}
 }
 
