@@ -1,3 +1,7 @@
+* {
+	-webkit-appearance: none;
+}
+
 body {
     background-color: #0f0f1a;
 	padding: 0px;
@@ -68,6 +72,7 @@ body {
 		max-width: 550px;
 		min-width: 400px;
 		margin: 0 auto;
+		border-bottom-left-radius: 15px;
 	}
 
 	#join-box {
@@ -97,13 +102,21 @@ body {
 	line-height: 1.6em;
 }
 
+#intro-content a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#intro-content a:hover {
+	text-decoration: underline;
+}
+
 #join-portal {
     display: grid;
 	grid-template-rows: 120px 90px;
 	border: #c2b1ec solid 4px;
 	border-top: #c2b1ec solid 24px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 15px;
 	padding: 20px;
 	height: min-content;
 	min-width: 380px;
@@ -133,7 +146,7 @@ body {
 	padding-top: 15px;
 	padding-bottom: 40px;
 	grid-template-columns: repeat(2, 1fr);
-	border-top: #c2b1ec solid 5px;
+	/*border-top: #c2b1ec solid 5px;*/
 }
 
 @media(max-width: 434px) {
@@ -261,11 +274,16 @@ body {
 }
 
 @media(max-width: 536px) {
+	#content {
+		width: 85%;
+	}
+
 	#join-portal {
 		min-width: 100px;
 		grid-template-rows: 100px 80px;
 		border: #c2b1ec 2px solid;
 		border-top: #c2b1ec 17px solid;
+		width: min-content;
 	}
 
 	#join-box {
@@ -303,6 +321,15 @@ body {
 		height: 80px;
 	}
 
+	#welcome-panel {
+		gap: 0px;
+		margin-bottom: 10px;
+	}
+
+	#club-intro {
+		margin-bottom: 20px;
+	}
+
 	#join-portal {
 		justify-content: center;
 		border: #c2b1ec 2px solid;
@@ -310,6 +337,8 @@ body {
 		min-width: 100px;
 		gap: 0px;
 		grid-template-rows: 80px 80px;
+		height: min-content;
+		margin-top: 0px;
 	}
 
 	.join {
@@ -384,6 +413,12 @@ body {
 	}
 }
 
+@media(max-width: 346px) {
+	#content {
+		width: 90%;
+	}
+}
+
 #active-projects {
     /*background-color: yellow;*/
 	display: grid;
@@ -397,6 +432,7 @@ body {
 	padding-top: 0px;
 	font-weight: 900;
 	font-size: 25px;
+	font-style: italic;
 }
 
 #project-grid {
@@ -412,6 +448,7 @@ body {
 	height: 200px;
 	text-align: left;
 	position: relative;
+	transition: transform 250ms;
 }
 
 .project-entry {
@@ -429,6 +466,13 @@ body {
 	color: black;
 	display: block;
 	padding-bottom: 60px;;
+}
+
+.project-card:hover {
+	transform: translateY(-5px);
+	-moz-box-shadow: 0 0 5px #000000;
+	-webkit-box-shadow: 0 0 5px #000000;
+	box-shadow: 0 0 5px #000000;
 }
 
 .project-title-box {
