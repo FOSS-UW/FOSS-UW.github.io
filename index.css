@@ -32,6 +32,11 @@ body {
 	color: #ffffff;
 	font-weight: 300;
 	padding: 10px;
+	text-decoration: none;
+}
+
+.page-link:hover {
+	text-decoration: underline;
 }
 
 #content {
