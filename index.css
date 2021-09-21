@@ -419,6 +419,14 @@ body {
 	#content {
 		width: 90%;
 	}
+
+	#newsletter-input {
+		border-radius: 5px;
+	}
+
+	#newsletter-subscribe-button {
+		border-radius: 5px;
+	}
 }
 
 #active-projects {
