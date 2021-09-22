@@ -41,7 +41,6 @@ body {
 
 #mobile-navbar {
 	display: none;
-	transition: transform 250ms;
 }
 
 #mobile-link-portal {
@@ -55,6 +54,7 @@ body {
 	padding: 20px;
 	padding-top: 20px;
 	margin: 0 auto;
+	transition: transform 250ms;
 }
 
 #mobile-links {
@@ -81,7 +81,7 @@ body {
 }
 
 #navbar-img {
-	width: 40px;
+	width: 30px;
 	height: 30px;
 }
 
@@ -293,6 +293,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	border-top: #c2b1ec solid 5px;
 	padding-top: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 #newsletter-input {
@@ -301,6 +304,9 @@ body {
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
 	padding-left: 7px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 #newsletter-input:focus {
@@ -318,6 +324,9 @@ body {
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	padding: 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 #newsletter-subscribe-button:hover {
