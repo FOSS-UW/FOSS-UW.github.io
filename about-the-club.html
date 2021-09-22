@@ -10,9 +10,19 @@
         <title>What is FOSS?</title>
         <meta name="description" content="What is FOSS?"/>
     
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script>
+			function showNavbar() {
+			  var x = document.getElementById("mobile-link-portal");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+		</script>
     </head>
     <body>
         <div id="banner">
@@ -23,9 +33,20 @@
         <div id="pages-tab">
             <a class="page-link" href="what-is-foss.html">What is FOSS?</a>
             <a class="page-link curr-page" href="about-the-club.html">About the club</a>
-          </div>
+        </div>
+        <div id="mobile-navbar">
+			<div id="mobile-link-portal">
+			  <div id="mobile-links">
+				<a href="what-is-foss.html">What is FOSS?</a><br><br>
+				<a class="curr-page" href="about-the-club.html">About the club</a>
+			  </div>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="showNavbar()">
+			  <img id="navbar-img" src="resources/threelines.png"></img>
+			</a>
+		</div>
         <div id="content">
-            <h2 class="top">Who we are</h2>
+            <h2 class="top">Who are we?</h2>
             <p>
                 The <b>Free and Open Source Software Club</b> is a student
                 organization at UW-Madison dedicated to inspiring and supporting
@@ -57,7 +78,7 @@
                 <br>
                 Our first club meeting for the Fall 2021 semester is still upcoming.
                 Be sure to join our newsletter or look out for announcements on our
-                website or discord.
+                website or discord!
             </p>
         </div>
         <div id="footer">Footer</div>

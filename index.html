@@ -13,6 +13,16 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+      function showNavbar() {
+        var x = document.getElementById("mobile-link-portal");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="banner">
@@ -23,6 +33,17 @@
     <div id="pages-tab">
       <a class="page-link" href="what-is-foss.html">What is FOSS?</a>
       <a class="page-link" href="about-the-club.html">About the club</a>
+    </div>
+    <div id="mobile-navbar">
+      <div id="mobile-link-portal">
+        <div id="mobile-links">
+          <a href="what-is-foss.html">What is FOSS?</a><br><br>
+          <a href="about-the-club.html">About the club</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="showNavbar()">
+        <img id="navbar-img" src="resources/threelines.png"></img>
+      </a>
     </div>
     <div id="content">
       <div id="welcome-panel">
