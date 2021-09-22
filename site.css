@@ -44,6 +44,10 @@ body {
 	text-decoration: none;
 }
 
+.curr-page {
+	font-weight: 900;
+}
+
 .page-link:hover {
 	text-decoration: underline;
 }
