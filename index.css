@@ -465,8 +465,9 @@ body {
 	}
 
 	#newsletter-input {
-		width: 100%;
+		width: 68%;
 		-webkit-appearance: none;
+		font-size: 12px;
 	}
 
 	#newsletter-subscribe-button {
