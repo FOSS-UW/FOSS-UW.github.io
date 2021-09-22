@@ -201,10 +201,6 @@ body {
 }
 
 @media(max-width: 434px) {
-	#content {
-		width: 80%;
-	}
-
 	#pages-tab {
 		display: none;
 	}

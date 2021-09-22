@@ -143,6 +143,12 @@ body {
 	}
 }
 
+@media(max-width: 346px) {
+	#content {
+		width: 90%;
+	}
+}
+
 h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -150,6 +156,10 @@ h1, h2, h3 {
 p, li, blockquote {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-weight: 400;
+}
+
+p {
+	line-height: 4.0em;
 }
 
 li {
@@ -181,7 +191,7 @@ h2 {
 }
 
 #content p {
-	line-height: 1.6em;
+	line-height: 1.8em;
 }
 
 #footer {
