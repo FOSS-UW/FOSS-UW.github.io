@@ -1,4 +1,4 @@
-# FOSS-UW.github.io
+# fossclub-uw.org
 Official Club Site Repository
 
-https://foss-uw.github.io/
+https://fossclub-uw.org

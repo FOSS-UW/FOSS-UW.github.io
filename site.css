@@ -122,6 +122,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+#content a {
+	color: white;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
 @media(max-width: 900px) {
     #content {
         width: 80%;
@@ -147,6 +156,17 @@ body {
 	#content {
 		width: 90%;
 	}
+}
+
+.news-date {
+	padding-top: 35px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.below-news-date {
+	padding-top: 25px;
+	margin-top: 0px;
 }
 
 h1, h2, h3 {
